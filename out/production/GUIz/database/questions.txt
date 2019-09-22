@@ -1,0 +1,12 @@
+The following statement will print out "Hello" : System.out.print(boxString("Hello"));.
+The following statement will check if int 1 is equal to int 2: if(1.egual 2){...}.
+To have an array list with ints, one must use Integer instead of int.
+A HashMap requires less memory resources than an Array.
+Suppose one wants to store names of the weekdays. One should use an array list over an array of seven strings.
+Suppose one wants to store birthdays in a class. One should use an array list over an array of seven strings.
+Suppose you want to wait for a user to click a button in JavaFX - Is thread.sleep() an okay way of waiting for input?
+We can have any number of classes in a Java Source File.
+Can a .txt document be created, edited and used as a simple database with a local Java program?
+Does Java Scene Builder 2.0 run smoothly on MacOS?");
+Java is a great language for programming simple web-applications.
+Is is fair to say the following about Java? "Write Once, Run Anywhere".
