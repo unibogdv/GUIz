@@ -1,11 +1,11 @@
 package controllers;
 
-import read.DataReader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import read.DataReader;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -59,7 +59,7 @@ public class GameController implements SceneSwitch {
 
     @FXML
     public void handleGoBack(ActionEvent click) throws IOException {
-        switchScene(click, "main_menu.fxml");
+        switchScene(click, "./src/main_menu.fxml");
     }
 
     /**

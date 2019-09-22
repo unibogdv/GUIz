@@ -1,3 +1,4 @@
+
 package controllers;
 
 import javafx.event.ActionEvent;
@@ -7,7 +8,8 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
-public class ControlPanelController implements SceneSwitch {
+
+public class ControlPanelLogin implements SceneSwitch {
 
     @FXML
     Button loginButton;
@@ -17,7 +19,7 @@ public class ControlPanelController implements SceneSwitch {
     TextField passwordText;
 
     private static final String username = "admin";
-    public static final String password = "password";
+    private static final String password = "password";
 
     @FXML
     public void handleLogin(ActionEvent click) throws IOException {
@@ -29,5 +31,10 @@ public class ControlPanelController implements SceneSwitch {
         } else {
             System.out.println("Password errata");
         }
+    }
+
+    @FXML
+    public void handleGoBack(ActionEvent click) throws IOException {
+        switchScene(click, "./src/main_menu.fxml");
     }
 }

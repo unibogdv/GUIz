@@ -1,13 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControlPanelController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControlPanelLogin">
    <children>
-      <TextField fx:id="usernameText" layoutX="201.0" layoutY="88.0" promptText="Enter username" />
-      <TextField fx:id="passwordText" layoutX="201.0" layoutY="134.0" promptText="Enter password" />
-      <Button fx:id="loginButton" layoutX="249.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+      <ImageView fitHeight="250.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/ReadyPlayerOneLogin.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutY="150.0" prefHeight="96.0" prefWidth="400.0" spacing="25.0">
+         <children>
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+            <Button fx:id="" mnemonicParsing="false" onAction="#handleGoBack" text="Chiudi" />
+         </children>
+         <padding>
+            <Insets left="155.0" top="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="166.0" prefWidth="400.0" spacing="20.0">
+         <children>
+            <Text fill="#9115c3" strokeType="OUTSIDE" strokeWidth="0.0" text="Password: ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="passwordText" opacity="0.5" promptText="Enter password" text="password" />
+         </children>
+         <padding>
+            <Insets left="33.0" top="100.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="166.0" prefWidth="400.0" spacing="20.0">
+         <children>
+            <Text fill="#9115c3" strokeType="OUTSIDE" strokeWidth="0.0" text="Username: ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="usernameText" opacity="0.5" promptText="Enter username" text="admin" />
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" top="10.0" />
+         </padding>
+      </HBox>
    </children>
 </AnchorPane>

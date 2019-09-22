@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
-
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControlPanelBoard">
    <children>
-      <Text layoutX="386.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It is working" />
+      <ImageView fitHeight="600.0" fitWidth="800.0">
+         <image>
+            <Image url="@resources/ReadyPlayerOne800Guiz.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="goBackFromPanel" layoutX="361.0" layoutY="509.0" mnemonicParsing="false" onAction="#handleGoBack" text="Chiudi" />
    </children>
 </AnchorPane>

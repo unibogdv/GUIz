@@ -1,5 +1,6 @@
 package controllers;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -31,5 +32,6 @@ public class MenuController implements SceneSwitch {
     }
 
     public void handleExit(ActionEvent actionEvent) {
+        Platform.exit();
     }
 }
