@@ -15,9 +15,9 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GameController">
     <children>
-      <ImageView fitHeight="600.0" fitWidth="800.0" opacity="0.45" preserveRatio="true">
+      <ImageView fitHeight="600.0" fitWidth="800.0" preserveRatio="true">
          <image>
-            <Image url="@resources/ReadyPlayerOne800Guiz.jpg" />
+            <Image url="@resources/ReadyPlayerOneGame.jpg" />
          </image>
       </ImageView>
       <GridPane layoutY="3.0" prefHeight="600.0" prefWidth="800.0">
@@ -86,7 +86,7 @@
                <GridPane.margin>
                   <Insets top="5.0" />
                </GridPane.margin></Button>
-              <Text fx:id="currentPlayer" fill="#9115c3" strokeType="OUTSIDE" strokeWidth="0.0" text="Giocatore corrente:" textAlignment="CENTER" wrappingWidth="266.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+              <Text fx:id="currentPlayer" fill="#9115c3" strokeType="OUTSIDE" strokeWidth="0.0" text="Giocatore corrente:" textAlignment="CENTER" wrappingWidth="380.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="5.0" />
                </GridPane.margin>

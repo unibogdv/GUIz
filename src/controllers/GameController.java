@@ -39,8 +39,9 @@ public class GameController implements SceneSwitch {
     @FXML
     Button goBackFromGame;
 
-    private ArrayList<String> questionsArray;
+    private ArrayList<String> questionArray;
     private ArrayList<String> answerArray;
+    private ArrayList<String> levelArray;
 
     private int player = 0;
     private int remainingQuestions = 0;
@@ -83,23 +84,24 @@ public class GameController implements SceneSwitch {
             playerTwoName="Player 2";
         }
 
-        score1.setText(playerOneName+ " has: 0 points;");
-        score2.setText(playerTwoName+ " has: 0 points;");
+        score1.setText(playerOneName+ " ha: 0 punti");
+        score2.setText(playerTwoName+ " ha: 0 punti");
 
         playerOneScore = 0;
         playerTwoScore = 0;
 
-        questionsArray = DataReader.readQuestions();
+        questionArray = DataReader.readQuestions();
         answerArray = DataReader.readAnswers();
+        levelArray = DataReader.readLevels();
 
         player = 1;
 
         // ****** RETRIEVE AND PRESENT FIRST QUESTION - THIS WILL ONLY BE USED TO START THE PROGRAM ******
-        randomQuestion = randomQuestionNumber.nextInt(questionsArray.size()); // GENERATES A RANDOM NUMBER TO PICK A RANDOM QUESTION FROM ARRAYLIST
-        statusText.setText("Domanda: " + questionsArray.get(randomQuestion)); // PRINTS THE RANDOM QUESTION TO THE UI
+        randomQuestion = randomQuestionNumber.nextInt(questionArray.size()); // GENERATES A RANDOM NUMBER TO PICK A RANDOM QUESTION FROM ARRAYLIST
+        statusText.setText("Domanda: " + questionArray.get(randomQuestion)); // PRINTS THE RANDOM QUESTION TO THE UI
 
         currentPlayer.setText("Giocatore corrente: "+playerOneName);
-        remainingQuestions = questionsArray.size()-1;
+        remainingQuestions = questionArray.size()-1;
         questionsLeft.setText(remainingQuestions + " domande mancanti");
 
         buttonFalse.setDisable(false);
@@ -149,14 +151,14 @@ public class GameController implements SceneSwitch {
             currentPlayer.setText("Giocatore corrente: "+playerOneName);
         }
 
-        questionsArray.remove(randomQuestion); // REMOVES QUESTION FROM ARRAYLIST
+        questionArray.remove(randomQuestion); // REMOVES QUESTION FROM ARRAYLIST
         answerArray.remove(randomQuestion); // REMOVES ANSWER FROM ARRAYLIST
-        remainingQuestions = questionsArray.size()-1;
+        remainingQuestions = questionArray.size()-1;
         questionsLeft.setText(remainingQuestions + " domande mancanti");
 
-        if(questionsArray.size()!=0){
-            randomQuestion = randomQuestionNumber.nextInt(questionsArray.size());
-            statusText.setText("Domanda: " + questionsArray.get(randomQuestion)); // PRINTS QUESTION TO THE UI
+        if(questionArray.size()!=0){
+            randomQuestion = randomQuestionNumber.nextInt(questionArray.size());
+            statusText.setText("Domanda: " + questionArray.get(randomQuestion)); // PRINTS QUESTION TO THE UI
             nextRound.setDisable(true);
             buttonFalse.setDisable(false);
             buttonTrue.setDisable(false);

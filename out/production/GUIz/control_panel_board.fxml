@@ -1,20 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControlPanelBoard">
    <children>
       <ImageView fitHeight="600.0" fitWidth="800.0">
          <image>
-            <Image url="@resources/ReadyPlayerOne800Guiz.jpg" />
+            <Image url="@resources/ReadyPlayerOneControlPanel.jpg" />
          </image>
       </ImageView>
+      <VBox layoutX="450.0" layoutY="150.0" prefHeight="149.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <RadioButton mnemonicParsing="false" text="Facile" textFill="#9115c3">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Medio" textFill="#9115c3">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Difficile" textFill="#9115c3">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Mix" textFill="#9115c3">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </VBox>
+      <HBox layoutX="200.0" layoutY="350.0" prefHeight="100.0" prefWidth="541.0">
+         <children>
+            <VBox prefHeight="93.0" prefWidth="209.0" spacing="10.0">
+               <children>
+                  <Text fill="#9115c3" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantità di domande">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#9115c3" strokeType="OUTSIDE" strokeWidth="0.0" text="Punti in base alla difficoltà">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="75.0" spacing="20.0">
+               <children>
+                  <TextField text="10" />
+                  <MenuButton mnemonicParsing="false" text="No">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Si" />
+                      <MenuItem mnemonicParsing="false" text="No" />
+                    </items>
+                  </MenuButton>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="200.0" layoutY="200.0" prefHeight="77.0" prefWidth="145.0">
+         <children>
+            <Text fill="#9115c3" strokeType="OUTSIDE" strokeWidth="0.0" text="Livello di difficoltà">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
       <Button fx:id="goBackFromPanel" layoutX="361.0" layoutY="509.0" mnemonicParsing="false" onAction="#handleGoBack" text="Chiudi" />
    </children>
 </AnchorPane>

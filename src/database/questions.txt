@@ -1,12 +1,40 @@
-The following statement will print out "Hello" : System.out.print(boxString("Hello"));.
-The following statement will check if int 1 is equal to int 2: if(1.egual 2){...}.
-To have an array list with ints, one must use Integer instead of int.
-A HashMap requires less memory resources than an Array.
-Suppose one wants to store names of the weekdays. One should use an array list over an array of seven strings.
-Suppose one wants to store birthdays in a class. One should use an array list over an array of seven strings.
-Suppose you want to wait for a user to click a button in JavaFX - Is thread.sleep() an okay way of waiting for input?
-We can have any number of classes in a Java Source File.
-Can a .txt document be created, edited and used as a simple database with a local Java program?
-Does Java Scene Builder 2.0 run smoothly on MacOS?");
-Java is a great language for programming simple web-applications.
-Is is fair to say the following about Java? "Write Once, Run Anywhere".
+Il centro della Terra è molto caldo. Vero o falso?
+I continenti si muovono da milioni di anni e continueranno a farlo. Vero o falso?
+La terra gira attorno al sole. Vero o falso?
+Gli elettroni sono più piccoli degli atomi. Vero o falso?
+Il laser funziona per concentrazione di onde sonore. Vero o falso?
+L'universo è iniziato con una grande esplosione. Vero o falso?
+Sono i geni paterni che decidono se un bebè sarà maschio o femmina. Vero o falso?
+Gli antibiotici uccidono i virus e i batteri. Vero o falso?
+Gli esseri umani come li conosciamo oggi si sono sviluppati a partire dalle prime specie di mammiferi. Vero o falso?
+La lingua della giraffa può arrivare fino a 60 cm di lunghezza. Vero o falso?
+L’ippopotamo è un animale erbivoro. Vero o falso?
+Le zebre in realtà sono nere con le strisce bianche. Vero o falso?
+Lo struzzo mette la testa sotto terra quando è spaventato. Vero o falso?
+Solo il leone maschio ha la criniera. Vero o falso?
+La tigre è il felino più grosso al mondo. Vero o falso?
+Il lama sputa succhi gastrici misti a saliva. Vero o falso?
+Nelle gobbe del cammello c’è acqua. Vero o falso?
+L’elefante africano ha le unghie visibili. Vero o falso?
+I babbuini sono solo erbivori. Vero o falso?
+Il serpenti vedono i colori come noi. Vero o falso?
+Lo sport nazionale degli Stati Uniti è il football. Vero o falso?
+Bruce Wayne è il vero nome di Batman. Vero o falso?
+Le prime torte sono state create dai pasticceri francesi nel ‘900. Vero o falso?
+Il superlativo assoluto dell’aggettivo acre è acrissimo. Vero o falso?
+La Torre Eiffel venne costruita in occasione della vittoria della Francia nella prima guerra mondiale. Vero o falso?
+Nei Promessi Sposi, celebre romanzo italiano, si parla di un personaggio chiamato Don Rodrigo. Vero o falso?
+La parola italiana più conosciuta al mondo è "ciao". Vero o falso?
+Una squadra di pallanuoto è composta da otto giocatori. Vero o falso?
+Lo strumento che rese celebre Paganini è il violino. Vero o falso?
+Il Rio delle Amazzoni lungo km. 6400, non è attraversato da alcun ponte. Vero o falso?
+L’autore del celebre brano "Va pensiero" è Giuseppe Verdi. Vero o falso?
+Oltre ai fiumi sotterranei esistono anche i fiumi sottomarini. Vero o falso?
+Il castello romano che ospita il Papa durante la stagione estiva è Castel Fusano. Vero o falso?
+Oliver Hardy è il nome e cognome del comico compagno di Stanlio. Vero o falso?
+La FAO è l'organizzazione delle Nazioni Unite per la cultura e l'istruzione. Vero o falso?
+L’oboe è uno strumento a percussione. Vero o falso?
+Il Mescal è una bevanda messicana. Vero o falso?
+Minerva era la divinità romana che rappresentava la Sapienza. Vero o falso?
+Il banchetto con il maggior numero di invitati è quello organizzato per le nozze di Carlo e Diana. Vero o falso?
+I primi pomodori giunti in Europa dopo la conquista dell’america non erano rossi. Vero o falso?
