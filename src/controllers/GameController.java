@@ -1,11 +1,11 @@
 package controllers;
 
+import handler.DataReader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
-import read.DataReader;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -63,10 +63,6 @@ public class GameController implements SceneSwitch {
         switchScene(click, "./src/main_menu.fxml");
     }
 
-    /**
-     * This method will run when the user starts the game.
-     * @param event
-     */
     @FXML
     private void handleStartGame(ActionEvent event) {
 
@@ -109,10 +105,7 @@ public class GameController implements SceneSwitch {
         startGame.setDisable(true);
     }
 
-    /**
-     *
-     * @param event
-     */
+
     @FXML
     private void handleButtonAnswer(ActionEvent event) {
         Button answerButtonClicked = (Button) event.getSource();
@@ -136,10 +129,7 @@ public class GameController implements SceneSwitch {
         buttonFalse.setDisable(true);
         buttonTrue.setDisable(true);
     }
-    /**
-     *
-     * @param event
-     */
+
     @FXML
     private void handleButtonNext(ActionEvent event) {
 

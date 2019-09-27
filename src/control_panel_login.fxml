@@ -25,7 +25,7 @@
             <Insets left="155.0" top="20.0" />
          </padding>
       </HBox>
-      <HBox alignment="CENTER_LEFT" prefHeight="166.0" prefWidth="400.0" spacing="20.0">
+      <HBox alignment="CENTER_LEFT" spacing="20.0">
          <children>
             <Text fill="#9115c3" strokeType="OUTSIDE" strokeWidth="0.0" text="Password: ">
                <font>
@@ -35,10 +35,10 @@
             <TextField fx:id="passwordText" opacity="0.5" promptText="Enter password" text="password" />
          </children>
          <padding>
-            <Insets left="33.0" top="100.0" />
+            <Insets left="33.0" top="110.0" />
          </padding>
       </HBox>
-      <HBox alignment="CENTER_LEFT" prefHeight="166.0" prefWidth="400.0" spacing="20.0">
+      <HBox alignment="CENTER_LEFT" spacing="20.0">
          <children>
             <Text fill="#9115c3" strokeType="OUTSIDE" strokeWidth="0.0" text="Username: ">
                <font>
@@ -48,7 +48,7 @@
             <TextField fx:id="usernameText" opacity="0.5" promptText="Enter username" text="admin" />
          </children>
          <padding>
-            <Insets bottom="30.0" left="30.0" top="10.0" />
+            <Insets left="30.0" top="60.0" />
          </padding>
       </HBox>
    </children>
