@@ -39,7 +39,7 @@ public class DataWriter {
 		 } catch (FileNotFoundException ex) {
 			 ex.printStackTrace();
 		 }
-		 outputStream.print("No");
+		 outputStream.print("false");
 		 outputStream.close();
 	}
 }

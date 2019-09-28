@@ -51,7 +51,6 @@ public class ControlPanelBoard implements SceneSwitch{
         try{
             String file = "./src/database/amount.txt";
             FileWriter fileWriter = new FileWriter(file);
-            //fileWriter.write("test amount");
             fileWriter.write(questionsAmount.getText());
             fileWriter.close();
         } catch (IOException e) {
@@ -63,8 +62,12 @@ public class ControlPanelBoard implements SceneSwitch{
             RadioButton selectedRadioButton = (RadioButton) pointsGroup.getSelectedToggle();
             String toggleGroupValue = selectedRadioButton.getText();
             FileWriter fileWriter = new FileWriter(file);
-            //fileWriter.write("test points");
-            fileWriter.write(toggleGroupValue);
+
+            if(toggleGroupValue.equalsIgnoreCase("si")){
+                fileWriter.write("true");
+            } else
+                fileWriter.write("false");
+
             labelSaved.setText("Impostazioni salvate");
             fileWriter.close();
             } catch (IOException e) {
