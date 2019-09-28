@@ -13,10 +13,15 @@
             <Image url="@resources/ReadyPlayerOne800Guiz.jpg" />
          </image>
       </ImageView>
-      <TextArea editable="false" layoutX="102.0" layoutY="271.0" prefHeight="140.0" prefWidth="600.0" text="GUIz è un gioco a quiz sviluppato in JavaFX. Due giocatori si alterneranno a rispondere alle domande che verranno selezionate (a caso) dal computer. Ad ogni risposta corretta verrà assegnato un punto, vince il giocatore che ne guadagna di più." wrapText="true">
+      <TextArea editable="false" layoutX="100.0" layoutY="160.0" prefHeight="140.0" prefWidth="600.0" text="GUIz è un gioco a quiz sviluppato in JavaFX. Due giocatori si alterneranno a rispondere alle domande che verranno selezionate (a caso) dal computer. Ad ogni risposta corretta verrà assegnato un punto, vince il giocatore che ne guadagna di più." wrapText="true">
          <font>
             <Font size="20.0" />
          </font></TextArea>
       <Button fx:id="goBackFromInstructions" layoutX="365.0" layoutY="507.0" mnemonicParsing="false" onAction="#handleGoBack" text="Chiudi" />
+      <TextArea layoutX="100.0" layoutY="321.0" prefHeight="132.0" prefWidth="600.0" text="Dalle impostazioni è possibile impostare il livello di difficoltà, il numero di domande a cui rispondere ed infine la modalità di gioco che assegna punti bonus a seconda della difficoltà della domanda (da 1 a 3).&#10;" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextArea>
    </children>
 </AnchorPane>
