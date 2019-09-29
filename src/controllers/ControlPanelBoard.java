@@ -2,11 +2,17 @@ package controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 
 import java.io.FileWriter;
 import java.io.IOException;
 
+// Gestisce il salvataggio delle "Impostazioni" una delle parti più importanti dell'intero programma.
+// Tutte le scelte fatte dall'utente nella GUI vengono salvate in differenti file di testo i cui dati
+// verranno letti ed elaborati dal GameController.
 
 public class ControlPanelBoard implements SceneSwitch{
 
@@ -27,51 +33,53 @@ public class ControlPanelBoard implements SceneSwitch{
     @FXML
     Label labelSaved;
     @FXML
-    Button saveButton;
-    @FXML
     ToggleGroup difficultyLevel;
     @FXML
     ToggleGroup pointsGroup;
 
     @FXML
-    public void handleSaveSettings(ActionEvent click) throws IOException {
+    public void handleSaveSettings() throws IOException {
 
+        // Salva il livello di difficoltà selezionato.
         try {
             String file = "./src/database/difficulty.txt";
             RadioButton selectedRadioButton = (RadioButton) difficultyLevel.getSelectedToggle();
             String toggleGroupValue = selectedRadioButton.getText();
             FileWriter fileWriter = new FileWriter(file);
-            //fileWriter.write("test difficulty");
+            //fileWriter.write("test scrittura");
             fileWriter.write(toggleGroupValue);
             fileWriter.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ex) {
+            System.out.println(ex);
         }
 
-        try{
+        // Salva il numero di domande a cui rispondere.
+        try {
             String file = "./src/database/amount.txt";
             FileWriter fileWriter = new FileWriter(file);
             fileWriter.write(questionsAmount.getText());
             fileWriter.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ex) {
+            System.out.println(ex);
         }
 
-        try{
+        // Salva la modalità di gioco che assegna punti bonus
+        // in base alla difficoltà della domanda.
+        try {
             String file = "./src/database/points.txt";
             RadioButton selectedRadioButton = (RadioButton) pointsGroup.getSelectedToggle();
             String toggleGroupValue = selectedRadioButton.getText();
             FileWriter fileWriter = new FileWriter(file);
 
+        // La scelta del "si" porta il salvataggio come "true", il "no" del "false".
             if(toggleGroupValue.equalsIgnoreCase("si")){
                 fileWriter.write("true");
             } else
                 fileWriter.write("false");
-
-            labelSaved.setText("Impostazioni salvate");
-            fileWriter.close();
-            } catch (IOException e) {
-            e.printStackTrace();
+                labelSaved.setText("Impostazioni salvate");
+                fileWriter.close();
+            } catch (IOException ex) {
+            System.out.println(ex);
         }
     }
 

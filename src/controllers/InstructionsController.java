@@ -2,18 +2,15 @@ package controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 
 import java.io.IOException;
 
-public class InstructionsController implements SceneSwitch {
+// Istruzioni di gioco e crediti.
 
-    @FXML
-    private Button goBackFromInstructions;
+public class InstructionsController implements SceneSwitch {
 
     @FXML
     public void handleGoBack(ActionEvent click) throws IOException {
         switchScene(click, "./src/main_menu.fxml");
     }
-
 }

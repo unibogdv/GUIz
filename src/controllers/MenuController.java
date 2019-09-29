@@ -3,20 +3,12 @@ package controllers;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 
 import java.io.IOException;
 
-public class MenuController implements SceneSwitch {
+// Controller della schermata principale con i tasti di Avvio, Istruzioni, Impostazioni, Uscita.
 
-    @FXML
-    private Button play;
-    @FXML
-    private Button instructions;
-    @FXML
-    private Button controlPanel;
-    @FXML
-    private Button exit;
+public class MenuController implements SceneSwitch {
 
     @FXML
     public void handlePlay(ActionEvent click) throws IOException {
@@ -31,7 +23,7 @@ public class MenuController implements SceneSwitch {
         switchScene(click, "./src/control_panel_login.fxml");
     }
 
-    public void handleExit(ActionEvent actionEvent) {
+    public void handleExit() {
         Platform.exit();
     }
 }

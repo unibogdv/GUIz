@@ -4,7 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
-// Initialize the content of amount.txt, difficulty.txt, points.txt
+// Inizializza il contenuto dei file amount.txt, difficulty.txt, points.txt
+// in modo che ad ogni partita vengano usati i parametri di default e non quelli
+// salvati nella partita precedente.
 
 public class DataWriter {
 

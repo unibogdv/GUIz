@@ -11,26 +11,28 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
+// Quest'interfaccia si occupa di gestire il cambio scena.
+
 public interface SceneSwitch {
 
 	default void switchScene(ActionEvent click, String resource) throws IOException {
 		
-		//Gets the current window.
+		// Ottiene i riferimenti della scena corrente
 		Button source = (Button)click.getSource();
 		Scene currentScene = source.getScene();
 		Stage window = (Stage)currentScene.getWindow();
 
-		//Need to load a new 'fxml' file.
+		// Carica il nuovo file FXML
 		URL url = new File(resource).toURI().toURL();
 		Parent root = FXMLLoader.load(url);
 
-		//Sets the scene for that file.
+		// Imposta la scena con i riferimenti del file FXML
 		Scene newScene = new Scene(root);
 
-		//PRINT OUT FOR TESTING
-		System.out.println("The scene has been switched to " + resource);
+		// Stampa nel terminale per verificare il funzionamento
+		System.out.println("La scena è stata cambiata in " + resource);
 		
-		//Change to another scene
+		// Mostra la nuova scena
 		window.setScene(newScene);
 		window.show();
 	}

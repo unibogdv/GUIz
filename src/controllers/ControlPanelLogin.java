@@ -1,4 +1,3 @@
-
 package controllers;
 
 import javafx.event.ActionEvent;
@@ -8,6 +7,10 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
+// Gestisce la schermata di login alle "Impostazioni".
+// Per praticità sono stati preconfigurati sia username che password.
+// Sempre per praticità si è scelto di non usare il campo "PasswordField"
+// al fine di evitare che la password venisse mascherata con gli asterischi.
 
 public class ControlPanelLogin implements SceneSwitch {
 

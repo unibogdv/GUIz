@@ -5,7 +5,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.*?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InstructionsController">
    <children>
       <ImageView fitHeight="600.0" fitWidth="800.0">
@@ -18,10 +18,20 @@
             <Font size="20.0" />
          </font></TextArea>
       <Button fx:id="goBackFromInstructions" layoutX="365.0" layoutY="507.0" mnemonicParsing="false" onAction="#handleGoBack" text="Chiudi" />
-      <TextArea layoutX="100.0" layoutY="321.0" prefHeight="132.0" prefWidth="600.0" text="Dalle impostazioni è possibile impostare il livello di difficoltà, il numero di domande a cui rispondere ed infine la modalità di gioco che assegna punti bonus a seconda della difficoltà della domanda (da 1 a 3).&#10;" wrapText="true">
+      <TextArea layoutX="100.0" layoutY="321.0" prefHeight="133.0" prefWidth="600.0" text="Dalle impostazioni è possibile impostare il livello di difficoltà, il numero di domande a cui rispondere ed infine la modalità di gioco che assegna punti bonus a seconda della difficoltà della domanda (da 1 a 3). Buon divertimento!" wrapText="true">
          <font>
             <Font size="20.0" />
          </font>
       </TextArea>
+      <Text fill="#09a2f4" layoutX="14.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(CC) Gianluigi Di Vaio">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#09a2f4" layoutX="626.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C.S. 8014 - A.A. 2018/19">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
