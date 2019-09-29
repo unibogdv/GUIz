@@ -35,22 +35,7 @@ public class DataReader {
 
 		return getStrings(levelsFile);
 	}
-/*
-	public static File readDifficulty() {
 
-		return (difficultyFile);
-	}
-
-	public static File readAmountOfQuestions() {
-
-		return (amountOfQuestionsFile);
-	}
-
-	public static File readPoints(){
-
-		return (pointsFile);
-	}
-*/
 
 	private static ArrayList<String> getStrings(File questionsFile) {
 		ArrayList<String> questions = new ArrayList<>();
@@ -65,7 +50,4 @@ public class DataReader {
 		}
 		return questions;
 	}
-
-	//	String difficulty = Files.lines(Paths.get(DIFFICULTY_PATH)).findFirst().get();
-
 }

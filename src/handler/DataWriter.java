@@ -23,7 +23,7 @@ public class DataWriter {
 		 } catch (FileNotFoundException ex) {
 			 ex.printStackTrace();
 		 }
-		 outputStream.print("Mix");
+		 outputStream.print("MIX");
 		 outputStream.close();
 
 		try {
@@ -31,7 +31,7 @@ public class DataWriter {
 		} catch (FileNotFoundException ex) {
 			ex.printStackTrace();
 		}
-		outputStream.print("3");
+		outputStream.print("4");
 		outputStream.close();
 
 		 try {
