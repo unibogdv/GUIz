@@ -33,6 +33,8 @@ public class ControlPanelBoard implements SceneSwitch{
     @FXML
     Label labelSaved;
     @FXML
+    Label labelError;
+    @FXML
     ToggleGroup difficultyLevel;
     @FXML
     ToggleGroup pointsGroup;
@@ -54,10 +56,21 @@ public class ControlPanelBoard implements SceneSwitch{
         }
 
         // Salva il numero di domande a cui rispondere.
+        // Verifica la validità dei valori inseriti e lo segnala all'utente.
         try {
             String file = "./src/database/amount.txt";
             FileWriter fileWriter = new FileWriter(file);
-            fileWriter.write(questionsAmount.getText());
+            if (Integer.parseInt(questionsAmount.getText()) > 40
+                    || Integer.parseInt(questionsAmount.getText()) <= 0) {
+                labelError.setText("Quantità non valida, setto\ni parametri di default.");
+                fileWriter.write("10");
+            } else if (Integer.parseInt(questionsAmount.getText()) % 2 != 0) {
+                labelError.setText("E' preferibile l'uso dei pari,\nun pò di fair play!");
+                fileWriter.write(questionsAmount.getText());
+            } else {
+                labelError.setText("OK!");
+                fileWriter.write(questionsAmount.getText());
+            }
             fileWriter.close();
         } catch (IOException ex) {
             System.out.println(ex);

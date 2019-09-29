@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GUIz:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GUIz_jar</output-path>
+    <root id="archive" name="GUIz.jar">
+      <element id="module-output" name="GUIz" />
+    </root>
+  </artifact>
+</component>

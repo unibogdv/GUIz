@@ -33,7 +33,7 @@ public class DataWriter {
 		} catch (FileNotFoundException ex) {
 			ex.printStackTrace();
 		}
-		outputStream.print("4");
+		outputStream.print("10");
 		outputStream.close();
 
 		 try {
