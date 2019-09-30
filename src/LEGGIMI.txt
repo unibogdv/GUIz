@@ -4,9 +4,9 @@ L'ho realizzato da solo, a partire dall'esempio di base di JavaFX fornito con In
 All'inizio ero un pò scoraggiato, poi pian piano, con l'aiuto del materiale di studio (vedi fonti),  
 e svariate nottate al PC, ho iniziato a programmare la logica di gioco, l'impostazione dei vari controller, 
 la grafica, etc. Fino a che non ho raggiunto un risultato che rispettasse la consegna e di cui fossi soddisfatto.
-I software che ho usato sono stati IntelliJ IDEA, JavaFX Scene Builder, Paint.NET.
+I software che ho usato sono stati IntelliJ IDEA, JavaFX Scene Builder, Paint.NET e Notepad++.
 
-Da ragazzino mi sarebbe piaciuto fare il programmatore di videogiochi, ma il grosso della 
+Da ragazzino mi sarebbe piaciuto fare il programmatore di videogiochi, ma tutta la 
 documentazione era in Inglese ed ero troppo piccolo per comprendere tutto...
 Ora a 42 anni, ho imparato Java da zero (l'Inglese non è più un ostacolo, anzi!) e sono riuscito a 
 realizzare questo gioco che ai più sembrerà banale, ma che per me è stato un traguardo importante.
@@ -18,6 +18,6 @@ Elenco delle fonti.
 - Slide e esercizi dei prof. A. Di Iorio e S. Ferretti (ora capisco perchè insistevate tanto con gli Array!)
 - Libro di testo "Programmazione di base e avanzata con Java" (W. Savitch)
 - Corsi online edX (Kasey Champion) e Udacity (Chezanne Chamacho & Asser Samak)
-- Video tutorial su YouTube (Michael Fudge, Bucky Roberts, Kody Simpson)
-- Esercizi Domagoj Trupeljak
+- Video tutorial su YouTube (Michael Fudge, Bucky Roberts)
+- Esercizi di Domagoj Trupeljak
 - Esempi Stack Overflow

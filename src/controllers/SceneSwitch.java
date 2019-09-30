@@ -30,7 +30,7 @@ public interface SceneSwitch {
 		Scene newScene = new Scene(root);
 
 		// Stampa nel terminale per verificare il funzionamento
-		System.out.println("La scena è stata cambiata in " + resource);
+		// System.out.println("La scena è stata cambiata in " + resource);
 		
 		// Mostra la nuova scena
 		window.setScene(newScene);

@@ -172,7 +172,7 @@ public class GameController implements SceneSwitch {
         // Gestisce e mostra la prima domanda, questa parte di codice verrà utilizzata solo per avviare il programma,
         // dopodichè i turni verranno gestiti da handleButtonNext, fino alla proclamazione del vincitore (o del pareggio).
         randomQuestion = randomQuestionNumber.nextInt(questionArray.size()); // Genera un numero casuale per estrarre una domanda a caso.
-        statusText.setText("Domanda: " + questionArray.get(randomQuestion)); // Mostra la domanda a cui rispondere.
+        statusText.setText(questionArray.get(randomQuestion) + "\nVERO o FALSO?"); // Mostra la domanda a cui rispondere.
 
         questionDifficulty.setText("Domanda: " + levelArray.get(randomQuestion)); // Mostra la difficoltà della domanda.
 
@@ -239,8 +239,8 @@ public class GameController implements SceneSwitch {
 
         if (questionArray.size()!=0) {
             randomQuestion = randomQuestionNumber.nextInt(questionArray.size());
-            statusText.setText("Domanda: " + questionArray.get(randomQuestion)); // Mostra la domanda a cui rispondere.
-            questionDifficulty.setText("Domanda: " +levelArray.get(randomQuestion)); // Mostra la difficoltà della domanda.
+            statusText.setText(questionArray.get(randomQuestion) + "\nVERO o FALSO?"); // Mostra la domanda a cui rispondere.
+            questionDifficulty.setText("Domanda: " + levelArray.get(randomQuestion)); // Mostra la difficoltà della domanda.
             nextRound.setDisable(true);
             buttonFalse.setDisable(false);
             buttonTrue.setDisable(false);
