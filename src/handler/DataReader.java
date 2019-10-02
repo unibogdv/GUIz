@@ -11,12 +11,12 @@ import java.util.Scanner;
 
 public class DataReader {
 
-	private static final String QUESTIONS_PATH = "./src/database/questions.txt";
-	private static final String ANSWERS_PATH = "./src/database/answers.txt";
-	private	static final String LEVELS_PATH = "./src/database/levels.txt";
-	private static final String DIFFICULTY_PATH = "./src/database/difficulty.txt";
-	private static final String AMOUNT_OF_QUESTIONS_PATH = "./src/database/amount.txt";
-	private static final String POINTS_PATH = "./src/database/points.txt";
+	private static final String QUESTIONS_PATH = "src/database/questions.txt";
+	private static final String ANSWERS_PATH = "src/database/answers.txt";
+	private	static final String LEVELS_PATH = "src/database/levels.txt";
+	private static final String DIFFICULTY_PATH = "src/database/difficulty.txt";
+	private static final String AMOUNT_OF_QUESTIONS_PATH = "src/database/amount.txt";
+	private static final String POINTS_PATH = "src/database/points.txt";
 
 	private static final File questionsFile = new File(QUESTIONS_PATH);
 	private static final File answersFile = new File(ANSWERS_PATH);

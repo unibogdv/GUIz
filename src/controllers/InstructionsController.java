@@ -11,6 +11,6 @@ public class InstructionsController implements SceneSwitch {
 
     @FXML
     public void handleGoBack(ActionEvent click) throws IOException {
-        switchScene(click, "./src/main_menu.fxml");
+        switchScene(click, "src/main_menu.fxml");
     }
 }

@@ -10,9 +10,9 @@ import java.io.PrintWriter;
 
 public class DataWriter {
 
-	private static final String DIFFICULTY_PATH = "./src/database/difficulty.txt";
-	private static final String AMOUNT_OF_QUESTIONS_PATH = "./src/database/amount.txt";
-	private static final String POINTS_PATH = "./src/database/points.txt";
+	private static final String DIFFICULTY_PATH = "src/database/difficulty.txt";
+	private static final String AMOUNT_OF_QUESTIONS_PATH = "src/database/amount.txt";
+	private static final String POINTS_PATH = "src/database/points.txt";
 
 	private static final File difficultyFile = new File(DIFFICULTY_PATH);
 	private static final File amountOfQuestionsFile = new File(AMOUNT_OF_QUESTIONS_PATH);

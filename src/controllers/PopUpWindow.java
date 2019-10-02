@@ -13,7 +13,10 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
-// Work in progress, lo scopo è realizzare un'interfaccia che esegua una finestra Pop-Up sulla scena principale.
+// Work in progress, lo scopo è realizzare un'interfaccia che esegua una finestra Pop-Up sulla scena principale,
+// la finestra non deve consentire l'interazione con la scena sottostante, inoltre non deve essere possibile
+// chiuderla fino a quando non si effettua una scelta.
+
 public interface PopUpWindow {
 
     default void windowPopUp(ActionEvent click, String resource) throws IOException {

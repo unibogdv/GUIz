@@ -44,7 +44,7 @@ public class ControlPanelBoard implements SceneSwitch{
 
         // Salva il livello di difficoltà selezionato.
         try {
-            String file = "./src/database/difficulty.txt";
+            String file = "src/database/difficulty.txt";
             RadioButton selectedRadioButton = (RadioButton) difficultyLevel.getSelectedToggle();
             String toggleGroupValue = selectedRadioButton.getText();
             FileWriter fileWriter = new FileWriter(file);
@@ -58,7 +58,7 @@ public class ControlPanelBoard implements SceneSwitch{
         // Salva il numero di domande a cui rispondere.
         // Verifica la validità dei valori inseriti e lo segnala all'utente.
         try {
-            String file = "./src/database/amount.txt";
+            String file = "src/database/amount.txt";
             FileWriter fileWriter = new FileWriter(file);
             if (Integer.parseInt(questionsAmount.getText()) > 40
                     || Integer.parseInt(questionsAmount.getText()) <= 0) {
@@ -79,7 +79,7 @@ public class ControlPanelBoard implements SceneSwitch{
         // Salva la modalità di gioco che assegna punti bonus
         // in base alla difficoltà della domanda.
         try {
-            String file = "./src/database/points.txt";
+            String file = "src/database/points.txt";
             RadioButton selectedRadioButton = (RadioButton) pointsGroup.getSelectedToggle();
             String toggleGroupValue = selectedRadioButton.getText();
             FileWriter fileWriter = new FileWriter(file);
@@ -98,6 +98,6 @@ public class ControlPanelBoard implements SceneSwitch{
 
     @FXML
     public void handleGoBack(ActionEvent click) throws IOException {
-        switchScene(click, "./src/main_menu.fxml");
+        switchScene(click, "src/main_menu.fxml");
     }
 }

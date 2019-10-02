@@ -3,6 +3,7 @@ package controllers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
@@ -20,6 +21,8 @@ public class ControlPanelLogin implements SceneSwitch {
     TextField usernameText;
     @FXML
     TextField passwordText;
+    @FXML
+    Label labelError;
 
     private static final String username = "admin";
     private static final String password = "password";
@@ -30,14 +33,14 @@ public class ControlPanelLogin implements SceneSwitch {
         String checkPassword = passwordText.getText();
 
         if(checkUsername.equals(username) && checkPassword.equals(password)) {
-            switchScene(click,"./src/control_panel_board.fxml");
+            switchScene(click,"src/control_panel_board.fxml");
         } else {
-            System.out.println("Password errata");
+            labelError.setText("Combinazione Username/Password, errata!");
         }
     }
 
     @FXML
     public void handleGoBack(ActionEvent click) throws IOException {
-        switchScene(click, "./src/main_menu.fxml");
+        switchScene(click, "src/main_menu.fxml");
     }
 }
