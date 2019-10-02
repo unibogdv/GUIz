@@ -3,10 +3,10 @@ A little quiz game developed in JavaFX.
 
 "GUIz" è stato realizzato come progetto finale del corso di Programmazione, per gruppi di 2-3 studenti.
 
-L'ho realizzato da solo, a partire dall'esempio di base di JavaFX fornito con IntelliJ IDEA.
+L'ho sviluppato da solo, a partire dall'esempio di base di JavaFX fornito con IntelliJ IDEA.
 All'inizio ero un pò scoraggiato, poi pian piano, con l'aiuto del materiale di studio (vedi fonti),  
 e svariate nottate al PC, ho iniziato a programmare la logica di gioco, l'impostazione dei vari controller, 
-la grafica, etc. Fino a che non ho raggiunto un risultato che rispettasse la consegna e di cui fossi soddisfatto.
+la grafica, etc. Fino a che non ho raggiunto un risultato che rispettasse +/- la consegna e di cui fossi soddisfatto.
 I software che ho usato sono stati IntelliJ IDEA, JavaFX Scene Builder, Paint.NET e Notepad++.
 
 Da ragazzino mi sarebbe piaciuto fare il programmatore di videogiochi(!), ma tutta la 
