@@ -15,7 +15,9 @@ Ora a 42 anni, ho imparato Java da zero (l'inglese non è più un ostacolo, anzi
 realizzare questo gioco, che ai più sembrerà banale, ma che per me è stato un traguardo importante.
 
 La grafica si ispira al film "Ready Player One", un omaggio agli anni '80, i miei anni più belli.
-(CC) Gianluigi Di Vaio - C.S. 8014 - Informatica per il Management A.A. 2018/19.
+
+(CC) Gianluigi Di Vaio
+C.S. 8014 - Informatica per il Management A.A. 2018/19.
 
 Elenco delle fonti.
 - Slide e esercizi dei prof. A. Di Iorio e S. Ferretti (ora capisco perchè insistevate tanto con gli Array!)
