@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GameController">
     <children>
       <ImageView fitHeight="600.0" fitWidth="800.0" preserveRatio="true">
@@ -25,12 +28,12 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-              <TextField fx:id="player1" alignment="CENTER" prefHeight="39.0" prefWidth="206.0" promptText="Inserire il nome del primo giocatore" text="Nome giocatore" GridPane.valignment="BOTTOM">
+              <TextField fx:id="player1" alignment="CENTER" prefHeight="39.0" prefWidth="206.0" promptText="Giocatore1" text="Nome giocatore" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="5.0" left="50.0" right="50.0" />
                </GridPane.margin>
             </TextField>
-              <TextField fx:id="player2" alignment="CENTER" prefHeight="39.0" prefWidth="200.0" promptText="Inserire il nome del secondo giocatore" text="Nome giocatore" GridPane.columnIndex="2" GridPane.valignment="BOTTOM">
+              <TextField fx:id="player2" alignment="CENTER" prefHeight="39.0" prefWidth="200.0" promptText="Giocatore2" text="Nome giocatore" GridPane.columnIndex="2" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="5.0" left="50.0" right="50.0" />
                </GridPane.margin>

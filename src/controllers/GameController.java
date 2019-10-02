@@ -140,7 +140,7 @@ public class GameController implements SceneSwitch {
         // La scansione parte sempre dal fondo dell'array ed il ciclo eliminerà da tutti gli array tante
         // domande fino a raggiungere il valore scelto dall'utente.
         if (amountOfQuestions != 0 && questionArray.size() > amountOfQuestions) {
-            for (int i = questionArray.size()-1; i >= amountOfQuestions; i--){
+            for (int i = questionArray.size() - 1; i >= amountOfQuestions; i--){
                 questionArray.remove(i);
                 answerArray.remove(i);
                 levelArray.remove(i);
@@ -177,7 +177,7 @@ public class GameController implements SceneSwitch {
         questionDifficulty.setText("Domanda: " + levelArray.get(randomQuestion)); // Mostra la difficoltà della domanda.
 
         currentPlayer.setText("Giocatore corrente: " + playerOneName);
-        remainingQuestions = questionArray.size()-1; // Aggiorna il contatore con il numero di domande mancanti,
+        remainingQuestions = questionArray.size() - 1; // Aggiorna il contatore con il numero di domande mancanti,
         questionsLeft.setText(remainingQuestions + " domande mancanti"); // e lo mostra a video settandolo .setText
 
         buttonFalse.setDisable(false);
@@ -234,10 +234,10 @@ public class GameController implements SceneSwitch {
         answerArray.remove(randomQuestion); // Rimuove la risposta a fini di allineamento degli array.
         levelArray.remove(randomQuestion); // Rimuove il livello a fini di allineamento degli array.
         pointArray.remove(randomQuestion); // Rimuove il punto a  fini di allineamento degli array.
-        remainingQuestions = questionArray.size()-1; // Aggiorna il contatore con il numero di domande mancanti,
+        remainingQuestions = questionArray.size() - 1; // Aggiorna il contatore con il numero di domande mancanti,
         questionsLeft.setText(remainingQuestions + " domande mancanti"); // e lo mostra a video settandolo .setText
 
-        if (questionArray.size()!=0) {
+        if (questionArray.size() != 0) {
             randomQuestion = randomQuestionNumber.nextInt(questionArray.size());
             statusText.setText(questionArray.get(randomQuestion) + "\nVERO o FALSO?"); // Mostra la domanda a cui rispondere.
             questionDifficulty.setText("Domanda: " + levelArray.get(randomQuestion)); // Mostra la difficoltà della domanda.
@@ -252,7 +252,6 @@ public class GameController implements SceneSwitch {
             } else {
                 questionsLeft.setText("La partita è finita in pareggio! ");
             }
-
             nextRound.setDisable(true);
             startGame.setDisable(false);
             buttonFalse.setDisable(true);

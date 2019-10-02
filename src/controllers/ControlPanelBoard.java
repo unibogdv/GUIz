@@ -48,7 +48,6 @@ public class ControlPanelBoard implements SceneSwitch{
             RadioButton selectedRadioButton = (RadioButton) difficultyLevel.getSelectedToggle();
             String toggleGroupValue = selectedRadioButton.getText();
             FileWriter fileWriter = new FileWriter(file);
-            //fileWriter.write("test scrittura");
             fileWriter.write(toggleGroupValue);
             fileWriter.close();
         } catch (IOException ex) {
@@ -60,7 +59,7 @@ public class ControlPanelBoard implements SceneSwitch{
         try {
             String file = "src/database/amount.txt";
             FileWriter fileWriter = new FileWriter(file);
-            if (Integer.parseInt(questionsAmount.getText()) > 40
+            if (Integer.parseInt(questionsAmount.getText()) > 42
                     || Integer.parseInt(questionsAmount.getText()) <= 0) {
                 labelError.setText("Quantità non valida, setto\ni parametri di default.");
                 fileWriter.write("10");
