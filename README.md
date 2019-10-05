@@ -18,6 +18,8 @@ La grafica si ispira al film "Ready Player One", un omaggio agli anni '80, i mie
 
 (CC) Gianluigi Di Vaio - C.S. 8014 - Informatica per il Management A.A. 2018/19.
 
+
+
 Elenco delle fonti.
 - Slide e esercizi dei prof. A. Di Iorio e S. Ferretti (ora capisco perchè insistevate tanto con gli Array!)
 - Libro di testo "Programmazione di base e avanzata con Java" (W. Savitch)
