@@ -25,5 +25,4 @@ Elenco delle fonti.
 - Libro di testo "Programmazione di base e avanzata con Java" (W. Savitch)
 - Corsi online edX (Kasey Champion) e Udacity (Chezanne Chamacho & Asser Samak)
 - Video tutorial su YouTube (Michael Fudge, Bucky Roberts)
-- Esercizi di Domagoj Trupeljak
 - Esempi Stack Overflow
