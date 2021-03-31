@@ -16,7 +16,7 @@ realizzare questo gioco, che ai più sembrerà banale, ma che per me è stato un
 
 La grafica si ispira al film "Ready Player One", un omaggio agli anni '80, i miei anni più belli.
 
-(CC) Gianluigi Di Vaio - C.S. 8014 - Informatica per il Management A.A. 2018/19.
+(CC) Gianluigi D.V. - C.S. 8014 - Informatica per il Management A.A. 2018/19.
 
 
 
